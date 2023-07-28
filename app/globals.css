@@ -16,12 +16,26 @@
   }
 }
 
+@font-face {
+  font-family: "iranSanaEOT";
+  src: url("./fonts/IRANSansWeb\(FaNum\).eot");
+}
+
+@font-face {
+  font-family: "iranSansWOFF";
+  src: url("./fonts/IRANSansWeb\(FaNum\).woff");
+}
+
+@font-face {
+  font-family: "irenSansWOFF2";
+  src: url("./fonts/IRANSansWeb\(FaNum\).woff2");
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'iranSanaEOT', 'iranSansWOFF', 'irenSansWOFF2' !important;
+  direction: rtl;
+}
+
+.custom-bg{
+  background-color: rgba(0, 0, 0, 0.727);
 }
