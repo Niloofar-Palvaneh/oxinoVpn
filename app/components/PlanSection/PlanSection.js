@@ -16,14 +16,14 @@ export default function PlanSection() {
                 </div>
             </div>
             <div className="flex w-full items-center justify-center mt-12 relative">
-                <div className="grid grid-cols-4 gap-8 w-[90%] place-items-center z-20">
+                <div className="grid grid-cols-4 gap-8 w-[90%] place-items-center z-20 sm:grid-cols-1 sm:gap-12 md:grid-cols-1 lg:grid-cols-2">
                     <PlanBox />
                     <PlanBox />
                     <PlanBox />
                     <PlanBox />
                 </div>
                 <Image
-                className="absolute z-10 top-[150px]"
+                className="absolute z-10 top-[150px] sm:top-0 sm:h-screen"
                 src={"/imgs/bg-group.svg"} width={1000} height={100}/>
             </div>
         </>

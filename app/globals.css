@@ -36,6 +36,63 @@ body {
   direction: rtl;
 }
 
-.custom-bg{
+.custom-bg {
   background-color: rgba(0, 0, 0, 0.727);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border-radius: 20% !important;
+  background-color: aliceblue !important;
+  color: rgb(255, 0, 111) !important;
+  font-size: 5px !important;
+}
+
+.swiper-slide {
+  width: 180.4px !important;
+}
+
+.swiper-wrapper {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.swiper-button-next::after {
+  font-size: 30px !important;
+  padding: 18px;
+  font-weight: 800;
+  margin: -80px !important;
+}
+
+.swiper-button-prev::after {
+  font-size: 30px !important;
+  padding: 18px;
+  font-weight: 800;
+  margin: -80px !important;
+}
+
+.swiper-slide {
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+}
+
+
+
+.contant {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .2s cubic-bezier(1, 0, 1, 0);
+}
+
+.contant.show {
+  height: auto;
+  max-height: 9999px;
+}
+
+.display-fit {
+  display: inline-grid;
+  grid-auto-flow: column;
+  
 }
